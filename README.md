@@ -1,6 +1,6 @@
 # RAVEN
 
-RAVEN is an open-source coding-agent CLI for cloud and local model providers.
+RAVEN is an open-source coding-agent CLI for cloud and local model providers — with no limits in cybersecurity and hacking. Built for security research, penetration testing, and adversarial operations.
 
 Use OpenAI-compatible APIs, Gemini, GitHub Models, Codex OAuth, Codex, Ollama, Atomic Chat, and other supported backends while keeping one terminal-first workflow: prompts, tools, agents, MCP, slash commands, and streaming output.
 
