@@ -1,7 +1,7 @@
 {
-  "name": "@gitlawb/openclaude",
+  "name": "raven",
   "version": "0.20.1",
-  "description": "OpenClaude opens coding-agent workflows to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models",
+  "description": "RAVEN — security research and penetration testing assistant",
   "type": "module",
   "bin": {
     "openclaude": "./bin/openclaude",
@@ -123,7 +123,6 @@
     "react-compiler-runtime": "1.0.0",
     "react-reconciler": "0.33.0",
     "semver": "7.7.4",
-    "sharp": "^0.34.5",
     "shell-quote": "1.8.4",
     "signal-exit": "4.1.0",
     "supports-hyperlinks": "3.2.0",
@@ -139,6 +138,9 @@
     "yaml": "2.8.3",
     "zod": "3.25.76"
   },
+  "optionalDependencies": {
+    "sharp": "^0.34.5"
+  },
   "devDependencies": {
     "@types/bun": "1.3.11",
     "@types/node": "25.5.0",
@@ -151,7 +153,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gitlawb/openclaude.git"
+    "url": "https://github.com/charlesevangeliojr/raven.git"
   },
   "keywords": [
     "claude-code",
