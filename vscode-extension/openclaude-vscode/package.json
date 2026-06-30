@@ -11,25 +11,6 @@
     "Themes",
     "Other"
   ],
-  "activationEvents": [
-    "onStartupFinished",
-    "onCommand:openclaude.start",
-    "onCommand:openclaude.startInWorkspaceRoot",
-    "onCommand:openclaude.openDocs",
-    "onCommand:openclaude.openSetupDocs",
-    "onCommand:openclaude.openWorkspaceProfile",
-    "onCommand:openclaude.openControlCenter",
-    "onCommand:openclaude.newChat",
-    "onCommand:openclaude.openChat",
-    "onCommand:openclaude.resumeSession",
-    "onCommand:openclaude.abortChat",
-    "onCommand:openclaude.setAzureApiKey",
-    "onCommand:openclaude.clearAzureApiKey",
-    "onCommand:openclaude.configureAzureChat",
-    "onCommand:openclaude.openAzureSettings",
-    "onView:openclaude.controlCenter",
-    "onView:openclaude.chat"
-  ],
   "main": "./src/extension.js",
   "files": [
     "README.md",

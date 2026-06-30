@@ -74,11 +74,20 @@ RAVEN is also mirrored to GitLawb:
 RAVEN requires Node.js `>=22.0.0` for npm installs and runtime. Bun is
 only needed for source builds and local development.
 
+**Linux / macOS:**
+
 ```bash
 npm install -g https://github.com/charlesevangeliojr/raven.git
 ```
 
+**Windows (PowerShell or CMD):**
+
+```powershell
+npm install -g https://github.com/charlesevangeliojr/raven.git
+```
+
 If you're on Arch Linux, you can install RAVEN from the community-maintained [AUR package](https://aur.archlinux.org/packages/raven):
+
 ```bash
 paru -S raven
 ```

@@ -4,7 +4,7 @@
   "description": "RAVEN — security research and penetration testing assistant",
   "type": "module",
   "bin": {
-    "raven": "./bin/raven.cmd"
+    "raven": "./bin/raven"
   },
   "exports": {
     "./package.json": "./package.json",
