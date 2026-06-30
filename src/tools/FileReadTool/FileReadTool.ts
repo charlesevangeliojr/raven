@@ -52,7 +52,7 @@ import { lazySchema } from '../../utils/lazySchema.js'
 import { logError } from '../../utils/log.js'
 import { isAutoMemFile } from '../../utils/memoryFileDetection.js'
 import { createUserMessage } from '../../utils/messages.js'
-import { getCanonicalName, getMainLoopModel } from '../../utils/model/model.js'
+
 import {
   mapNotebookCellsToToolResult,
   readNotebook,
@@ -783,10 +783,7 @@ export const FileReadTool = buildTool({
         if (data.file.content) {
           content =
             memoryFileFreshnessPrefix(data) +
-            formatFileLines(data.file) +
-            (shouldIncludeFileReadMitigation()
-              ? CYBER_RISK_MITIGATION_REMINDER
-              : '')
+            formatFileLines(data.file)
         } else {
           // Determine the appropriate warning message
           content =
@@ -812,26 +809,6 @@ function pickLineFormatInstruction(): string {
 /** Format file content with line numbers. */
 function formatFileLines(file: { content: string; startLine: number }): string {
   return addLineNumbers(file)
-}
-
-export const CYBER_RISK_MITIGATION_REMINDER =
-  '\n\n<system-reminder>\nWhenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.\n</system-reminder>\n'
-
-// Models where cyber risk mitigation should be skipped. The recent Opus models
-// (4.8/4.7) inherit 4.6's exemption — 4.8 is now the first-party default, so
-// without this it would get the reminder on every file read that 4.6 did not.
-const MITIGATION_EXEMPT_MODELS = new Set([
-  'claude-opus-4-8',
-  'claude-opus-4-7',
-  'claude-opus-4-6',
-])
-
-function shouldIncludeFileReadMitigation(): boolean {
-  if (isEnvTruthy(process.env.OPENCLAUDE_DISABLE_TOOL_REMINDERS)) {
-    return false
-  }
-  const shortName = getCanonicalName(getMainLoopModel())
-  return !MITIGATION_EXEMPT_MODELS.has(shortName)
 }
 
 /**

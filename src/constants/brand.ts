@@ -7,9 +7,9 @@
  * parses theme values with `parseRGB`, which only matches `rgb(...)` strings.
  */
 
-export const BRAND_NAME = 'OpenClaude'
+export const BRAND_NAME = 'RAVEN'
 
-export const BRAND_TAGLINE = 'Open terminal for any LLM'
+export const BRAND_TAGLINE = 'Security research terminal'
 
 /** gitlawb orange (#ff7a1a) in the rgb() form required by theme consumers. */
 export const BRAND_ACCENT_RGB = 'rgb(255,122,26)'

@@ -93,7 +93,7 @@ export function getDefaultCommitCoAuthorName({
   }
 
   const sanitizedModel = sanitizeCoAuthorNamePart(model)
-  return sanitizedModel ? `OpenClaude (${sanitizedModel})` : 'OpenClaude'
+  return sanitizedModel ? `RAVEN (${sanitizedModel})` : 'RAVEN'
 }
 
 export function getDefaultCommitCoAuthorEmail(_apiProvider: string): string {
