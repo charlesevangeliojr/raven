@@ -75,7 +75,7 @@ RAVEN requires Node.js `>=22.0.0` for npm installs and runtime. Bun is
 only needed for source builds and local development.
 
 ```bash
-npm install -g @charlesevangeliojr/raven@latest
+npm install -g https://github.com/charlesevangeliojr/raven.git
 ```
 
 If you're on Arch Linux, you can install RAVEN from the community-maintained [AUR package](https://aur.archlinux.org/packages/raven):
@@ -89,8 +89,7 @@ If the install later reports `ripgrep not found`, install ripgrep system-wide an
 
 ```bash
 raven --version
-npm view @charlesevangeliojr/raven dist-tags
-npm install -g @charlesevangeliojr/raven@latest
+npm install -g https://github.com/charlesevangeliojr/raven.git
 ```
 
 ### Start
