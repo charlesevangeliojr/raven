@@ -24,7 +24,7 @@ export default defineGateway({
   label: 'NVIDIA NIM',
   category: 'hosted',
   defaultBaseUrl: 'https://integrate.api.nvidia.com/v1',
-  defaultModel: 'nvidia/llama-3.1-nemotron-70b-instruct',
+  defaultModel: 'deepseek-ai/deepseek-v4-pro',
   supportsModelRouting: true,
   setup: {
     requiresAuth: true,
