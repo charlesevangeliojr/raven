@@ -4,7 +4,6 @@
   "description": "RAVEN — security research and penetration testing assistant",
   "type": "module",
   "bin": {
-    "openclaude": "./bin/openclaude",
     "raven": "./bin/raven.cmd"
   },
   "exports": {
@@ -175,8 +174,5 @@
     "lodash-es": "4.18.1",
     "node-domexception": "file:vendor/node-domexception-shim"
   },
-  "allowScripts": {
-    "protobufjs@7.6.4": true,
-    "sharp@0.34.5": true
-  }
+  "allowScripts": {}
 }
